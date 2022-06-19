@@ -1,0 +1,130 @@
+body{
+    background:#202124 !important;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.centro{
+    text-align: center;
+}
+
+div[dir="ltr"]{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    border: 5px solid white;    
+}
+
+#opcoes{
+    border: 5px solid white;
+    color: white;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+#escolherQuantidade{
+    padding: 30px;
+    border-right: 5px solid white;
+}
+
+#escolherLinguagem{
+    padding: 30px;
+}
+
+#teste{
+    top: 50%;
+    height: max-content;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.selecionado{
+    background: #202124 !important;
+    border-radius: 50px 0px 0px 50px;
+    border: 7px solid white !important;
+    border-right-color: #202124 !important;
+    transform: translateX(7px);
+    z-index: 2;
+}
+
+#data{
+    width: 85%;
+    height: 85%;
+}
+
+#menu{
+    background: #202124;
+    padding: 0px;
+    border-right: 7px solid white;
+}
+
+#botoes{
+    text-align: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+
+#btnTeste, 
+#btnResultado,
+#btnConfirmar{
+    font-size: 1.5rem;
+    width: 90%;
+    background: none;
+    border:none;
+    color: white;
+}
+
+.quantidade{
+    display: none;
+}
+
+.quantidade + label{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantidade:checked + label{
+
+    border: 1px solid white;
+}
+
+#quantidadeSelecionada{
+    border: 5px solid white;
+
+}
+
+.opcaoLinguagem:checked + label{
+    color: lime;
+}
+
+.opcaoLinguagem + label{
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+.opcaoLinguagem{
+    display: none;
+}
+
+#btnConfirmar{
+    margin-top: 10px;   
+    width: max-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+#btnConfirmar:hover{
+    transition: 100ms;
+    transform: scale(1.1);
+}

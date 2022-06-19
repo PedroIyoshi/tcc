@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  php:
+    image: php:7.4-apache
+    volumes:
+      - ../php/www/:/var/www/html
+    container_name: php_container
+    ports:
+      - 80:80
+    tty: true
+
+  python:
+    image: python:latest
+    volumes:
+      - ../:./
+    container_name: python_container
+    ports:
+      - 80:7000
+
+  ruby:
+    image: ruby:latest
+    volumes:
+      - ../:./
+    container_name: ruby_container
+    ports:
+      - 80:900
+
+  nodeJs:
+    image: nodeJs:latest
+    volumes:
+      - ../:./
+    container_name: nodeJs_container
+    ports:
+      -80:1000
